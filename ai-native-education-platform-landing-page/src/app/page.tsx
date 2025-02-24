@@ -1,11 +1,11 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-
+import { FirstSection } from "./FirstSection";
+import { HeroSection } from "./HeroSection";
 
 export default function Home() {
   return (
-    <section>
-      <Button>test</Button>
+    <section className="pt-36 z-0">
+      <HeroSection />
+      <FirstSection />
     </section>
   );
 }
