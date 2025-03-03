@@ -20,7 +20,7 @@ export const FirstSection = () => {
         </div>
       </div>
       <div className="h-[40%] grid grid-cols-3 gap-7 mt-7">
-        <Card className="border-zinc-300 shadow-lg pb-3">
+        <Card className="border-border shadow-lg pb-3">
           <CardHeader>
             <BookCheck
               strokeWidth={1}
@@ -39,7 +39,7 @@ export const FirstSection = () => {
             <Button>Start Creating Lessons</Button>
           </CardFooter>
         </Card>
-        <Card className="border-zinc-300 shadow-lg  pb-3">
+        <Card className="border-border shadow-lg  pb-3">
           <CardHeader>
             <Pencil
               strokeWidth={1}
@@ -59,7 +59,7 @@ export const FirstSection = () => {
           </CardFooter>
         </Card>
 
-        <Card className="border-zinc-300 shadow-lg  pb-3">
+        <Card className="border-border shadow-lg  pb-3">
           <CardHeader>
             <Brain
               strokeWidth={1}
