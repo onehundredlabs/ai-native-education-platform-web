@@ -2,6 +2,7 @@ import { FirstSection } from "./sections/FirstSection";
 import { FourthSection } from "./sections/FourthSection";
 import { HeroSection } from "./sections/HeroSection";
 import { SecondSection } from "./sections/SecondSection";
+import { ThirdSection } from "./sections/ThirdSection";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <HeroSection />
       <FirstSection />
       <SecondSection />
+      <ThirdSection/>
       <FourthSection />
     </section>
   );

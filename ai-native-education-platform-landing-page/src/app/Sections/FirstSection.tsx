@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { BookCheck, Brain, Pencil } from "lucide-react";
+import { ArrowRight, BookCheck, Brain, Pencil } from "lucide-react";
 
 export const FirstSection = () => {
   return (
@@ -36,7 +36,7 @@ export const FirstSection = () => {
             </p>
           </CardContent>
           <CardFooter>
-            <Button>Start Creating Lessons</Button>
+            <Button>Start Creating Lessons <ArrowRight size={20} /></Button>
           </CardFooter>
         </Card>
         <Card className="border-border shadow-lg  pb-3">
@@ -55,7 +55,7 @@ export const FirstSection = () => {
             </p>
           </CardContent>
           <CardFooter>
-            <Button>Configure Assignments</Button>
+            <Button>Configure Assignments <ArrowRight size={20} /></Button>
           </CardFooter>
         </Card>
 
@@ -75,7 +75,7 @@ export const FirstSection = () => {
             </p>
           </CardContent>
           <CardFooter>
-            <Button>See Suggestions</Button>
+            <Button>See Suggestions <ArrowRight size={20} /></Button>
           </CardFooter>
         </Card>
       </div>

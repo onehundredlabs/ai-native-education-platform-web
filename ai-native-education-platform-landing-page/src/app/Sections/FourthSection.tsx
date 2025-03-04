@@ -5,7 +5,7 @@ import { BarChartCard } from "./../charts/BarChartCard";
 
 export const FourthSection = () => {
   return (
-    <section className="w-3/4 m-auto mb-32">
+    <section className="w-3/4 m-auto ">
       <div>
         <h2 className="text-5xl font-bold text-center font-geist">
           Progress Tracking & Analytics

@@ -1,8 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { ThemeButton } from "./ThemeButton";
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion"; // ✅ Importujeme Framer Motion
+import { motion } from "framer-motion";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -11,6 +10,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { GraduationCap, SquareArrowOutUpRight } from "lucide-react";
+import { ThemeButton } from "../ThemeButton";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);

@@ -14,7 +14,7 @@ export const SecondSection = () => {
         </p>
       </div>
 
-      <div className="w-3/4 m-auto grid grid-cols-2 gap-10 mt-10 font-geist">
+      <div className="w-3/4 m-auto grid grid-cols-2 gap-y-14 gap-x-16 mt-10 font-geist">
         <div className="border rounded-xl shadow-lg p-10 flex flex-col items-center bg-card">
           <Wind strokeWidth={0.75} size={150} className="text-primary mb-5" />
           <h3 className="text-2xl font-bold">Interactive Lesson Flow</h3>
