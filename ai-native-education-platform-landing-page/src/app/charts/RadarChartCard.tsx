@@ -34,7 +34,7 @@ const chartConfig = {
 
 export function RadarChartCard() {
   return (
-    <Card className="h-[620px]">
+    <Card className="lg:h-[620px]">
       <CardHeader className=" pb-6">
         <CardTitle className="text-left pt-3 b-1">
           Digital Certificates

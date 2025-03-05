@@ -6,11 +6,11 @@ import { ThirdSection } from "./sections/ThirdSection";
 
 export default function Home() {
   return (
-    <section className="pt-36 z-0">
+    <section className="pt-20 lg:pt-28 xl:36 z-0">
       <HeroSection />
       <FirstSection />
       <SecondSection />
-      <ThirdSection/>
+      <ThirdSection />
       <FourthSection />
     </section>
   );

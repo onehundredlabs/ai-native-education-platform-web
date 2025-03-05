@@ -4,11 +4,11 @@ import { Github, Globe, Linkedin, Twitter } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="mt-32 w-3/4 m-auto">
-      <div className="flex items-center w-full justify-between">
-        <h3 className="font-geist text-2xl font-bold opacity-80">Learnify</h3>
+    <footer className="mt-32 w-5/6 lg:w-3/4 m-auto">
+      <div className="flex flex-col lg:flex-row items-center w-full justify-between">
+        <h3 className="font-geist text-2xl font-bold opacity-80 mb-5 lg:mb-0">Learnify</h3>
 
-        <nav className="flex">
+        <nav className="flex flex-col lg:flex-row">
           <Button variant="link" asChild>
             <a href="">Creation</a>
           </Button>
@@ -24,12 +24,12 @@ export const Footer = () => {
           <Button variant="link" asChild>
             <a href="">Collaboration</a>
           </Button>
-          <Button variant="link" className="pr-0" asChild>
+          <Button variant="link" className="pr-4 lg:pr-0" asChild>
             <a href="">Explore</a>
           </Button>
         </nav>
       </div>
-      <div className="flex gap-4 mt-5 ">
+      <div className="flex justify-center lg:justify-start gap-4 mt-5 ">
         <a href="" className="opacity-65 hover:opacity-100 transition">
           <Github strokeWidth={1.5}  size={27} />
         </a>
