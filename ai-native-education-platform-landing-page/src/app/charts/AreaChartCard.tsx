@@ -48,7 +48,7 @@ export function AreaChartCard() {
         </CardDescription>
       </CardHeader>
       <CardContent className="lg:h-[250px]">
-        <ChartContainer config={chartConfig} className="max-h-[250px]">
+        <ChartContainer config={chartConfig} className="">
           <AreaChart
             accessibilityLayer
             data={chartData}
