@@ -10,7 +10,7 @@ import { ArrowRight, BookCheck, Brain, Pencil } from "lucide-react";
 
 export const FirstSection = () => {
   return (
-    <section id="creation" className="mb-20 lg:mb-48  w-5/6 lg:w-3/4  rounded-xl m-auto mt-24 ">
+    <section  className="mb-20 lg:mb-48  w-5/6 lg:w-3/4  rounded-xl m-auto mt-24 ">
       <div className=" flex font-geist">
         <div className="xl:w-1/2">
           <h2 className="text-4xl lg:text-5xl font-bold ">Course Authoring Tool</h2>

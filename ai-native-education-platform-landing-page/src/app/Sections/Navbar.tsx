@@ -58,7 +58,7 @@ export const Navbar = () => {
             transition={{ duration: 0.4, ease: "easeInOut" }}
           >
             <nav className="flex flex-col mt-3">
-              <Button variant="link" asChild>
+              <Button variant="link"  asChild>
                 <a href="">Creation</a>
               </Button>
               <Button variant="link" asChild>
