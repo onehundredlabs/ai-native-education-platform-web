@@ -1,78 +1,95 @@
+"use client";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import { Code, MessageSquareCode, Wind } from "lucide-react";
+
+const data = [
+  {
+    icon: <Wind strokeWidth={0.75} size={150} className="text-primary mb-5" />,
+    title: "Interactive Lesson Flow",
+    description:
+      "Merge explanations, code examples, quizzes, and hands-on tasks into one continuous learning experience.",
+    badges: ["Interactive Learning", "Continuous Progress", "Hands-on Tasks"],
+  },
+  {
+    icon: <Code strokeWidth={0.75} size={150} className="text-primary mb-5" />,
+    title: "Built-In Coding Sandbox",
+    description:
+      "Let learners write and test JavaScript directly in the browser. Powered by a familiar web-based editor like Monaco.",
+    badges: ["Code Testing", "Web Editor", "JavaScript Support"],
+  },
+  {
+    icon: (
+      <MessageSquareCode
+        strokeWidth={0.75}
+        size={150}
+        className="text-primary mb-5"
+      />
+    ),
+    title: "AI Mentor/Chatbot",
+    description:
+      "Students can ask questions, request hints, or get instant code reviews—perfect for personalized, just-in-time support.",
+    badges: ["Instant Support", "Code Review", "Personalized Guidance"],
+    wide: true, // Označuje, že by měl být širší (přes 2 sloupce)
+  },
+];
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.2, duration: 0.5, ease: "easeOut" },
+  }),
+};
 
 export const SecondSection = () => {
   return (
     <section className="mb-32">
-      <div className="w-5/6 lg:w-3/4 m-auto ">
-        <h2 className="text-4xl lg:text-5xl font-bold lg:text-center font-geist">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+        viewport={{ once: true, amount: 0.3 }}
+        className="w-5/6 lg:w-3/4 m-auto text-center"
+      >
+        <h2 className="text-4xl lg:text-5xl font-bold font-geist">
           Learning Management
         </h2>
-        <p className="lg:text-center text-xl font-geist  py-3 opacity-70">
+        <p className="text-xl font-geist py-3 opacity-70">
           Make Learning Interactive and Personalized
         </p>
-      </div>
+      </motion.div>
 
       <div className="w-5/6 lg:w-3/4 m-auto grid grid-cols-1 lg:grid-cols-2 gap-y-14 gap-x-14 mt-10 font-geist">
-        <div className="border rounded-xl shadow-lg p-10 flex flex-col items-center  bg-card">
-          <Wind strokeWidth={0.75} size={150} className="text-primary  mb-5" />
-          <h3 className="text-2xl font-bold text-center">
-            Interactive Lesson Flow
-          </h3>
-
-          <p className="text-center lg:w-2/3 py-5 opacity-80">
-            Merge explanations, code examples, quizzes, and hands-on tasks into
-            one continuous learning experience.
-          </p>
-          <div className="lg:space-x-2 space-y-2 mt-2 mb-4 flex flex-col items-center">
-            <Badge variant={"outline"}>Interactive Learning</Badge>
-            <Badge variant={"outline"}>Continuous Progress</Badge>
-            <Badge variant={"outline"}>Hands-on Tasks</Badge>
-          </div>
-
-          <Button className="px-10 mt-5 py-5">Learn More</Button>
-        </div>
-
-        <div className="border rounded-xl shadow-lg p-10 flex flex-col items-center bg-card">
-          <Code strokeWidth={0.75} size={150} className="text-primary mb-5" />
-          <h3 className="text-2xl font-bold text-center">
-            Built-In Coding Sandbox
-          </h3>
-
-          <p className="text-center w-2/3 py-5 opacity-80">
-            Let learners write and test JavaScript directly in the browser.
-            Powered by a familiar web-based editor like Monaco.
-          </p>
-          <div className="lg:space-x-2 space-y-2  mt-2 mb-4 flex flex-col items-center">
-            <Badge variant={"outline"}>Code Testing</Badge>
-            <Badge variant={"outline"}>Web Editor</Badge>
-            <Badge variant={"outline"}>JavaScript Support</Badge>
-          </div>
-
-          <Button className="px-10 mt-5 py-5">Learn More</Button>
-        </div>
-
-        <div className="border rounded-xl shadow-lg lg:col-span-2 lg:place-self-center h-full w-full lg:w-1/2 p-10 flex flex-col items-center bg-card">
-          <MessageSquareCode
-            strokeWidth={0.75}
-            size={150}
-            className="text-primary mb-5"
-          />
-          <h3 className="text-2xl font-bold text-center">AI Mentor/Chatbot</h3>
-
-          <p className="text-center w-full lg:w-2/3 py-5 opacity-80">
-            Students can ask questions, request hints, or get instant code
-            reviews—perfect for personalized, just-in-time support.
-          </p>
-          <div className="lg:space-x-2 space-y-2  mt-2 mb-4 flex flex-col items-center">
-            <Badge variant={"outline"}>Instant Support</Badge>
-            <Badge variant={"outline"}>Code Review</Badge>
-            <Badge variant={"outline"}>Personalized Guidance</Badge>
-          </div>
-
-          <Button className="px-10 mt-5 py-5">Learn More</Button>
-        </div>
+        {data.map((item, i) => (
+          <motion.div
+            key={i}
+            custom={i}
+            initial="hidden"
+            whileInView="visible"
+            variants={cardVariants}
+            viewport={{ once: true, amount: 0.5 }}
+            className={`border rounded-xl shadow-lg p-10 flex flex-col items-center bg-card ${
+              item.wide ? "lg:col-span-2 lg:w-1/2 lg:place-self-center" : ""
+            }`}
+          >
+            {item.icon}
+            <h3 className="text-2xl font-bold text-center">{item.title}</h3>
+            <p className="text-center lg:w-2/3 py-5 opacity-80">
+              {item.description}
+            </p>
+            <div className="lg:space-x-2 space-y-2 mt-2 mb-4 flex flex-col items-center">
+              {item.badges.map((badge, j) => (
+                <Badge key={j} variant="outline">
+                  {badge}
+                </Badge>
+              ))}
+            </div>
+            <Button className="px-10 mt-5 py-5">Learn More</Button>
+          </motion.div>
+        ))}
       </div>
     </section>
   );

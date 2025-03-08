@@ -1,3 +1,4 @@
+import { FifthSection } from "./sections/FifthSection";
 import { FirstSection } from "./sections/FirstSection";
 import { FourthSection } from "./sections/FourthSection";
 import { HeroSection } from "./sections/HeroSection";
@@ -12,6 +13,7 @@ export default function Home() {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
+      <FifthSection />
     </section>
   );
 }
