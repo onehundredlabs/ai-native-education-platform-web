@@ -52,7 +52,8 @@ export const SecondSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
         viewport={{ once: true, amount: 0.3 }}
-        className="w-5/6 lg:w-3/4 m-auto text-center"
+        id="managment"
+        className="w-5/6 lg:w-3/4 m-auto text-center scroll-mt-32"
       >
         <h2 className="text-4xl lg:text-5xl font-bold font-geist">
           Learning Management

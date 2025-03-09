@@ -85,25 +85,10 @@ body {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground ;
+
   }
 }
 
 @layer components {
-  @keyframes gradientBackground {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-  .animate-gradientBackground {
-    background-size: 400% 400%;
-    animation: gradientBackground 10s ease infinite;
-  }
 }

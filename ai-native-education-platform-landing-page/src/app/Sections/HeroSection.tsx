@@ -54,7 +54,7 @@ export const HeroSection = () => {
             className="space-x-4 "
           >
             <Button className="text-sm p-5">Get Started</Button>
-            <Button id="creation" className="text-sm p-5" variant={"secondary"}>
+            <Button className="text-sm p-5" variant={"secondary"}>
               Request a Demo
             </Button>
           </motion.div>
@@ -74,6 +74,7 @@ export const HeroSection = () => {
           />
         </motion.div>
       </div>
+      <div ></div>
     </section>
   );
 };

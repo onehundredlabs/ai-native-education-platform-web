@@ -112,7 +112,7 @@ export const Navbar = () => {
               <NavigationMenuItem>
                 <NavigationMenuLink
                   href="#creation"
-                  className={`${navigationMenuTriggerStyle()} bg-card lg:px-2 xl:px-4 hover:bg-secondary ${
+                  className={`${navigationMenuTriggerStyle()} bg-card scroll-smooth lg:px-2 xl:px-4 hover:bg-secondary ${
                     isScrolled && "lg:text-xs xl:text-sm"
                   }`}
                 >
@@ -121,7 +121,7 @@ export const Navbar = () => {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink
-                  href="/"
+                  href="#managment"
                   className={`${navigationMenuTriggerStyle()} bg-card lg:px-2 xl:px-4 hover:bg-secondary ${
                     isScrolled && "lg:text-xs xl:text-sm"
                   }`}
@@ -131,7 +131,7 @@ export const Navbar = () => {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink
-                  href="/"
+                  href="#feedback"
                   className={`${navigationMenuTriggerStyle()} bg-card lg:px-2 xl:px-4 hover:bg-secondary ${
                     isScrolled && "lg:text-xs xl:text-sm"
                   }`}
@@ -141,7 +141,7 @@ export const Navbar = () => {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink
-                  href="/"
+                  href="#analytics"
                   className={`${navigationMenuTriggerStyle()} bg-card lg:px-2 xl:px-4 hover:bg-secondary ${
                     isScrolled && "lg:text-xs xl:text-sm"
                   }`}
@@ -151,7 +151,7 @@ export const Navbar = () => {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink
-                  href="/"
+                  href="#collaboration"
                   className={`${navigationMenuTriggerStyle()} bg-card lg:px-2 xl:px-4 hover:bg-secondary ${
                     isScrolled && "lg:text-xs xl:text-sm"
                   }`}
@@ -161,7 +161,7 @@ export const Navbar = () => {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink
-                  href="/"
+                  href="#explore"
                   className={`${navigationMenuTriggerStyle()} bg-card lg:px-2 xl:px-4 hover:bg-secondary ${
                     isScrolled && "lg:text-xs xl:text-sm"
                   }`}

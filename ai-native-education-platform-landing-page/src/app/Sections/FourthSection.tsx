@@ -14,10 +14,12 @@ export const FourthSection = () => {
   return (
     <section className="w-5/6 lg:w-3/4 m-auto mb-32">
       <motion.div
+      id="analytics"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
         viewport={{ once: true, amount: 0.3 }}
+        className="scroll-mt-32"
       >
         <h2 className="text-5xl font-bold lg:text-center font-geist">
           Progress Tracking & Analytics

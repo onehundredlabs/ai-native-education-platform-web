@@ -55,8 +55,8 @@ const data = [
 
 export const FirstSection = () => {
   return (
-    <section className="mb-20 lg:mb-48 w-5/6 lg:w-3/4 rounded-xl m-auto mt-24">
-      <div className="flex font-geist">
+    <section className="mb-20 lg:mb-48 w-5/6 lg:w-3/4 rounded-xl m-auto ">
+      <div id="creation" className="flex font-geist mt-24 scroll-mt-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

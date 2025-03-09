@@ -55,11 +55,12 @@ export const ThirdSection = () => {
   return (
     <section className="w-5/6 lg:w-3/4 m-auto mb-32">
       <motion.div
+        id="feedback"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
         viewport={{ once: true, amount: 0.3 }}
-        className="flex font-geist"
+        className="flex font-geist scroll-mt-32"
       >
         <div>
           <h2 className="text-4xl lg:text-5xl font-bold lg:text-left">
@@ -101,7 +102,10 @@ export const ThirdSection = () => {
           >
             <div className="flex items-center">
               <p
-                className={`lg:text-[18px] xl:text-xl font-semibold font-geist text-primary ${i === data.length - 1 && "text-nowrap"  || i === data.length - 2 && "text-nowrap" }`}
+                className={`lg:text-[18px] xl:text-xl font-semibold font-geist text-primary ${
+                  (i === data.length - 1 && "text-nowrap") ||
+                  (i === data.length - 2 && "text-nowrap")
+                }`}
               >
                 {item.title}
               </p>
