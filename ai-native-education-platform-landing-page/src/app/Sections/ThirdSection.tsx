@@ -36,7 +36,7 @@ const data = [
   {
     title: "Adaptive Task Difficulty",
     description:
-      "Adjusts challenge levels based on student progress to ensure appropriate difficulty.",
+      "Adjusts challenge levels based on progress to ensure optimal difficulty.",
     icon: <User size={15} className="mr-1" />,
     badge: "Personalized experience.",
   },
@@ -89,7 +89,7 @@ export const ThirdSection = () => {
         </Card>
       </motion.div>
 
-      <div className="flex flex-col space-y-5 lg:space-y-0 lg:flex-row mt-10">
+      <div className="flex flex-col  space-y-5 lg:space-y-0 lg:flex-row lg:justify-center  mt-10">
         {data.map((item, i) => (
           <motion.div
             key={i}
@@ -98,9 +98,9 @@ export const ThirdSection = () => {
             whileInView="visible"
             variants={itemVariants}
             viewport={{ once: true, amount: 0.2 }}
-            className="lg:w-1/4"
+            className={` ${i === data.length - 1 ? "w-[20%]" : "lg:w-1/4"}`}
           >
-            <div className="flex items-center">
+            <div className="h-12 flex items-center">
               <p
                 className={`lg:text-[18px] xl:text-xl font-semibold font-geist text-primary ${
                   (i === data.length - 1 && "text-nowrap") ||
@@ -109,17 +109,21 @@ export const ThirdSection = () => {
               >
                 {item.title}
               </p>
-              {
+              {i === data.length - 1 ? (
+                <div></div>
+              ) : (
                 <MoveRight
                   size={100}
                   strokeWidth={0.5}
-                  className={`mx-2 hidden lg:flex ${
-                    i === data.length - 1 && "opacity-0 "
-                  }`}
+                  className={`mx-2 hidden lg:flex `}
                 />
-              }
+              )}
             </div>
-            <p className="text-muted-foreground text-lg text-justify w-10/12">
+            <p
+              className={`text-muted-foreground text-lg text-justify ${
+                i === data.length - 1 ? "w-full " : "w-10/12"
+              } `}
+            >
               {item.description}
             </p>
             <Badge className="my-4 py-1">

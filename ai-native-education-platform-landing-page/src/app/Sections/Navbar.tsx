@@ -84,7 +84,7 @@ export const Navbar = () => {
         initial={{ width: "75%", paddingTop: "15px", paddingBottom: "15px" }}
         animate={{ width: isScrolled ? "50%" : "75%" }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-        className={`hidden lg:flex fixed mt-5 z-10 left-1/2 transform -translate-x-1/2  items-center ${
+        className={`hidden lg:flex fixed mt-5 z-10 left-1/2 transform -translate-x-1/2 items-center ${
           isScrolled ? "rounded-xl shadow-xl justify-between" : "justify-around"
         } bg-card`}
       >

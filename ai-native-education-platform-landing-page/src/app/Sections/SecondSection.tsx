@@ -63,7 +63,7 @@ export const SecondSection = () => {
         </p>
       </motion.div>
 
-      <div className="w-5/6 lg:w-3/4 m-auto grid grid-cols-1 lg:grid-cols-2 gap-y-14 gap-x-14 mt-10 font-geist">
+      <div className="w-5/6 lg:w-3/4 m-auto grid grid-cols-1 lg:grid-cols-3 gap-y-14 gap-x-14 mt-10 font-geist">
         {data.map((item, i) => (
           <motion.div
             key={i}
@@ -72,13 +72,12 @@ export const SecondSection = () => {
             whileInView="visible"
             variants={cardVariants}
             viewport={{ once: true, amount: 0.5 }}
-            className={`border rounded-xl shadow-lg p-10 flex flex-col items-center bg-card ${
-              item.wide ? "lg:col-span-2 lg:w-1/2 lg:place-self-center" : ""
+            className={`border rounded-xl shadow-lg p-10 flex flex-col items-center bg-card 
             }`}
           >
             {item.icon}
             <h3 className="text-2xl font-bold text-center">{item.title}</h3>
-            <p className="text-center lg:w-2/3 py-5 opacity-80">
+            <p className="text-center py-5 opacity-80">
               {item.description}
             </p>
             <div className="lg:space-x-2 space-y-2 mt-2 mb-4 flex flex-col items-center">

@@ -8,7 +8,7 @@ import { Sparkle } from "lucide-react";
 import Image from "next/image";
 export const HeroSection = () => {
   return (
-    <section className="w-5/6 lg:w-3/4   xl:h-[calc(100vh-200px)] m-auto bg-gradient-to-b  from-card via-card to-background rounded-xl">
+    <section className="w-5/6 lg:w-3/4   xl:h-[calc(100vh-200px)] m-auto bg-gradient-to-b   rounded-xl">
       <div className="flex flex-col lg:flex-row justify-between items-center xl:pt-20">
         <div className="py-10 h-full w-full lg:w-7/12">
           <motion.div
