@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 
 export const SixthSection = () => {
   return (
-    <section id="explore" className="relative lg:w-3/4 2xl:w-1/2 h-[400px] rounded-xl m-auto border p-10 overflow-hidden bg-white scroll-mt-32">
+    <section id="explore" className="relative w-5/6 lg:w-3/4 2xl:w-1/2 h-[400px] rounded-xl m-auto border p-10 overflow-hidden bg-white scroll-mt-32  mb-32 lg:mb-48">
       <h2 className="text-5xl font-geist font-bold pt-4 relative">
         Join the Future of Education Today - nedodelane
       </h2>

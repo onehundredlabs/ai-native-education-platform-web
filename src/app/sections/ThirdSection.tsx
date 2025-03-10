@@ -53,7 +53,7 @@ const itemVariants = {
 
 export const ThirdSection = () => {
   return (
-    <section className="w-5/6 lg:w-3/4 2xl:w-1/2 m-auto mb-32">
+    <section className="w-5/6 lg:w-3/4 2xl:w-1/2 m-auto  mb-32 lg:mb-48">
       <motion.div
         id="feedback"
         initial={{ opacity: 0, y: 20 }}
@@ -98,7 +98,7 @@ export const ThirdSection = () => {
             whileInView="visible"
             variants={itemVariants}
             viewport={{ once: true, amount: 0.2 }}
-            className={` ${i === data.length - 1 ? "w-[20%]" : "lg:w-1/4"}`}
+            className={` ${i === data.length - 1 ? "lg:w-[20%]" : "lg:w-1/4"}`}
           >
             <div className="h-12 flex items-center">
               <p
@@ -121,7 +121,7 @@ export const ThirdSection = () => {
             </div>
             <p
               className={`text-muted-foreground text-lg text-justify ${
-                i === data.length - 1 ? "w-full " : "w-10/12"
+                i === data.length - 1 ? "w-full " : "lg:w-10/12 w-full"
               } `}
             >
               {item.description}

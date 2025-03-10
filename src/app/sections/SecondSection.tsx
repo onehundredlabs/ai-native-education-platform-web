@@ -46,7 +46,7 @@ const cardVariants = {
 
 export const SecondSection = () => {
   return (
-    <section className="mb-32">
+    <section className=" mb-32 lg:mb-48">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -77,9 +77,7 @@ export const SecondSection = () => {
           >
             {item.icon}
             <h3 className="text-2xl font-bold text-center">{item.title}</h3>
-            <p className="text-center py-5 opacity-80">
-              {item.description}
-            </p>
+            <p className="text-center py-5 opacity-80">{item.description}</p>
             <div className="lg:space-x-2 space-y-2 mt-2 mb-4 flex flex-col items-center">
               {item.badges.map((badge, j) => (
                 <Badge key={j} variant="outline">
