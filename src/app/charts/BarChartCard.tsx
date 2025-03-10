@@ -35,7 +35,7 @@ const chartConfig = {
 
 export function BarChartCard() {
   return (
-    <Card className="lg:h-[620px]">
+    <Card className="lg:h-[620px] 2xl:h-[700px]">
       <CardHeader className="pb-10">
         <CardTitle className="pt-3 b-1">Educator Dashboards</CardTitle>
         <CardDescription>
@@ -43,7 +43,7 @@ export function BarChartCard() {
           participation.
         </CardDescription>
       </CardHeader>
-      <CardContent className="lg:h-[250px]">
+      <CardContent className="lg:h-[250px] 2xl:h-[350px]">
         <ChartContainer config={chartConfig}>
           <BarChart
             accessibilityLayer

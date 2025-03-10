@@ -53,7 +53,7 @@ export const SecondSection = () => {
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
         viewport={{ once: true, amount: 0.3 }}
         id="managment"
-        className="w-5/6 lg:w-3/4 m-auto text-center scroll-mt-32"
+        className="w-5/6 lg:w-3/4 2xl:w-1/2 m-auto text-center scroll-mt-32"
       >
         <h2 className="text-4xl lg:text-5xl font-bold font-geist">
           Learning Management
@@ -63,7 +63,7 @@ export const SecondSection = () => {
         </p>
       </motion.div>
 
-      <div className="w-5/6 lg:w-3/4 m-auto grid grid-cols-1 lg:grid-cols-3 gap-y-14 gap-x-14 mt-10 font-geist">
+      <div className="w-5/6 lg:w-3/4 2xl:w-1/2 m-auto grid grid-cols-1 lg:grid-cols-3 gap-y-14 gap-x-14 mt-10 font-geist">
         {data.map((item, i) => (
           <motion.div
             key={i}

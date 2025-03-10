@@ -4,9 +4,11 @@ import { Github, Globe, Linkedin, Twitter } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="mt-32 w-5/6 lg:w-3/4 m-auto">
+    <footer className="mt-32 w-5/6 lg:w-3/4 2xl:w-1/2 m-auto">
       <div className="flex flex-col lg:flex-row items-center w-full justify-between">
-        <h3 className="font-geist text-2xl font-bold opacity-80 mb-5 lg:mb-0">Learnify</h3>
+        <h3 className="font-geist text-2xl font-bold opacity-80 mb-5 lg:mb-0">
+          Learnify
+        </h3>
 
         <nav className="flex flex-col lg:flex-row">
           <Button variant="link" asChild>
@@ -31,16 +33,16 @@ export const Footer = () => {
       </div>
       <div className="flex justify-center lg:justify-start gap-4 mt-5 ">
         <a href="" className="opacity-65 hover:opacity-100 transition">
-          <Github strokeWidth={1.5}  size={27} />
+          <Github strokeWidth={1.5} size={27} />
         </a>
         <a href="" className="opacity-65 hover:opacity-100 transition">
-          <Twitter strokeWidth={1.5}   size={27} />
+          <Twitter strokeWidth={1.5} size={27} />
         </a>
         <a href="" className="opacity-65 hover:opacity-100 transition">
-          <Linkedin strokeWidth={1.5}   size={27} />
+          <Linkedin strokeWidth={1.5} size={27} />
         </a>
         <a href="" className="opacity-65 hover:opacity-100 transition">
-          <Globe strokeWidth={1.5}   size={27} />
+          <Globe strokeWidth={1.5} size={27} />
         </a>
       </div>
 

@@ -39,7 +39,7 @@ const chartConfig = {
 
 export function AreaChartCard() {
   return (
-    <Card className="lg:h-[620px]">
+    <Card className="lg:h-[620px] 2xl:h-[700px]">
       <CardHeader className="pb-10">
         <CardTitle className="pt-3 pb-1">Learner Dashboards</CardTitle>
         <CardDescription>
@@ -47,7 +47,7 @@ export function AreaChartCard() {
           progress.
         </CardDescription>
       </CardHeader>
-      <CardContent className="lg:h-[250px]">
+      <CardContent className="lg:h-[250px] 2xl:h-[350px] ">
         <ChartContainer config={chartConfig} className="">
           <AreaChart
             accessibilityLayer

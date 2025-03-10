@@ -15,7 +15,7 @@ export default {
         md: "768px",    // Výchozí md
         lg: "1100px",   // Změněný lg (místo 1024px)
         xl: "1400px",   // Změněný xl (místo 1280px)
-        "2xl": "1800px" // Změněný 2xl (místo 1536px)
+        "2xl": "2100px" // Změněný 2xl (místo 1536px)
       },
       fontFamily: {
         geist: ["var(--font-geist-sans)", "sans-serif"],

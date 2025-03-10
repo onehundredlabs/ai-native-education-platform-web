@@ -15,6 +15,17 @@ import { ThemeButton } from "../ThemeButton";
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [is2xlScreen, setIs2xlScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIs2xlScreen(window.innerWidth >= 2100);
+    };
+
+    handleResize(); // Nastaví hodnotu při načtení stránky
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,7 +69,7 @@ export const Navbar = () => {
             transition={{ duration: 0.4, ease: "easeInOut" }}
           >
             <nav className="flex flex-col mt-3">
-              <Button variant="link"  asChild>
+              <Button variant="link" asChild>
                 <a href="">Creation</a>
               </Button>
               <Button variant="link" asChild>
@@ -81,8 +92,20 @@ export const Navbar = () => {
         )}
       </motion.header>
       <motion.header
-        initial={{ width: "75%", paddingTop: "15px", paddingBottom: "15px" }}
-        animate={{ width: isScrolled ? "50%" : "75%" }}
+        initial={{
+          width: is2xlScreen ? "50%" : "75%",
+          paddingTop: "15px",
+          paddingBottom: "15px",
+        }}
+        animate={{
+          width: isScrolled
+            ? is2xlScreen
+              ? "25%"
+              : "50%"
+            : is2xlScreen
+            ? "50%"
+            : "75%",
+        }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
         className={`hidden lg:flex fixed mt-5 z-10 left-1/2 transform -translate-x-1/2 items-center ${
           isScrolled ? "rounded-xl shadow-xl justify-between" : "justify-around"
@@ -112,7 +135,7 @@ export const Navbar = () => {
               <NavigationMenuItem>
                 <NavigationMenuLink
                   href="#creation"
-                  className={`${navigationMenuTriggerStyle()} bg-card scroll-smooth lg:px-2 xl:px-4 hover:bg-secondary ${
+                  className={`${navigationMenuTriggerStyle()} bg-card scroll-smooth lg:px-2 xl:px-4 2xl:text-base hover:bg-secondary ${
                     isScrolled && "lg:text-xs xl:text-sm"
                   }`}
                 >
@@ -122,7 +145,7 @@ export const Navbar = () => {
               <NavigationMenuItem>
                 <NavigationMenuLink
                   href="#managment"
-                  className={`${navigationMenuTriggerStyle()} bg-card lg:px-2 xl:px-4 hover:bg-secondary ${
+                  className={`${navigationMenuTriggerStyle()} bg-card lg:px-2 xl:px-4  2xl:text-base hover:bg-secondary ${
                     isScrolled && "lg:text-xs xl:text-sm"
                   }`}
                 >
@@ -132,7 +155,7 @@ export const Navbar = () => {
               <NavigationMenuItem>
                 <NavigationMenuLink
                   href="#feedback"
-                  className={`${navigationMenuTriggerStyle()} bg-card lg:px-2 xl:px-4 hover:bg-secondary ${
+                  className={`${navigationMenuTriggerStyle()} bg-card lg:px-2 xl:px-4  2xl:text-base hover:bg-secondary ${
                     isScrolled && "lg:text-xs xl:text-sm"
                   }`}
                 >
@@ -142,7 +165,7 @@ export const Navbar = () => {
               <NavigationMenuItem>
                 <NavigationMenuLink
                   href="#analytics"
-                  className={`${navigationMenuTriggerStyle()} bg-card lg:px-2 xl:px-4 hover:bg-secondary ${
+                  className={`${navigationMenuTriggerStyle()} bg-card lg:px-2 xl:px-4  2xl:text-base hover:bg-secondary ${
                     isScrolled && "lg:text-xs xl:text-sm"
                   }`}
                 >
@@ -152,7 +175,7 @@ export const Navbar = () => {
               <NavigationMenuItem>
                 <NavigationMenuLink
                   href="#collaboration"
-                  className={`${navigationMenuTriggerStyle()} bg-card lg:px-2 xl:px-4 hover:bg-secondary ${
+                  className={`${navigationMenuTriggerStyle()} bg-card lg:px-2 xl:px-4  2xl:text-base hover:bg-secondary ${
                     isScrolled && "lg:text-xs xl:text-sm"
                   }`}
                 >
@@ -162,7 +185,7 @@ export const Navbar = () => {
               <NavigationMenuItem>
                 <NavigationMenuLink
                   href="#explore"
-                  className={`${navigationMenuTriggerStyle()} bg-card lg:px-2 xl:px-4 hover:bg-secondary ${
+                  className={`${navigationMenuTriggerStyle()} bg-card lg:px-2 xl:px-4  2xl:text-base hover:bg-secondary ${
                     isScrolled && "lg:text-xs xl:text-sm"
                   }`}
                 >

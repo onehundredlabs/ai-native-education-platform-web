@@ -53,7 +53,7 @@ const itemVariants = {
 
 export const ThirdSection = () => {
   return (
-    <section className="w-5/6 lg:w-3/4 m-auto mb-32">
+    <section className="w-5/6 lg:w-3/4 2xl:w-1/2 m-auto mb-32">
       <motion.div
         id="feedback"
         initial={{ opacity: 0, y: 20 }}
@@ -81,7 +81,7 @@ export const ThirdSection = () => {
         <Card className="w-full mt-10">
           <Image
             src={"/placeholder-screen.png"}
-            width={1400}
+            width={1920}
             height={500}
             className="rounded-xl"
             alt="screenshot of application"

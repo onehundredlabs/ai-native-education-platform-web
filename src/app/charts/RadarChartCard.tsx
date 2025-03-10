@@ -34,7 +34,7 @@ const chartConfig = {
 
 export function RadarChartCard() {
   return (
-    <Card className="lg:h-[620px]">
+    <Card className="lg:h-[620px] 2xl:h-[700px]">
       <CardHeader className=" pb-6">
         <CardTitle className="text-left pt-3 b-1">
           Digital Certificates
@@ -47,7 +47,7 @@ export function RadarChartCard() {
       <CardContent className="">
         <ChartContainer
           config={chartConfig}
-          className="w-full aspect-square max-h-[238px]"
+          className="w-full aspect-square max-h-[238px] 2xl:max-h-[338px]"
         >
           <RadarChart data={chartData}>
             <ChartTooltip
