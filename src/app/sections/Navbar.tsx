@@ -13,9 +13,9 @@ import { GraduationCap, Menu, SquareArrowOutUpRight, X } from "lucide-react";
 import { ThemeButton } from "../ThemeButton";
 
 export const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [is2xlScreen, setIs2xlScreen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [is2xlScreen, setIs2xlScreen] = useState<boolean>(false);
 
   useEffect(() => {
     const handleResize = () => {

@@ -55,7 +55,7 @@ const data = [
 
 export const FirstSection = () => {
   return (
-    <section className="mb-48 lg:mb-48 w-5/6 lg:w-3/4 2xl:w-1/2 rounded-xl m-auto ">
+    <section className="mb-32 lg:mb-48 w-5/6 lg:w-3/4 2xl:w-1/2 rounded-xl m-auto ">
       <div id="creation" className="flex font-geist mt-24 scroll-mt-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

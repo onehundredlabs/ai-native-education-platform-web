@@ -136,12 +136,12 @@ export const FifthSection = () => {
             transition: { delay: 0.2, duration: 0.7, ease: "easeOut" },
           }}
           viewport={{ once: true, amount: 0.5 }}
-          className="flex flex-col items-center  h-2 space-y-1"
+          className="flex flex-col items-center h-2 space-y-1"
         >
-          <h2 className="text-6xl font-bold">100+</h2>
-          <p className="opacity-70">Happy students</p>
+          <h2 className="text-6xl font-bold">1M+</h2>
+          <p className="opacity-70">AI-powered learning sessions</p>
         </motion.div>
-        <Separator className="lg:w-1/12 lg:rotate-90 mt-28 lg:mt-10 " />
+        <Separator className="lg:w-1/12 lg:rotate-90 mt-28 lg:mt-10" />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{
@@ -150,12 +150,12 @@ export const FifthSection = () => {
             transition: { delay: 0.5, duration: 0.7, ease: "easeOut" },
           }}
           viewport={{ once: true, amount: 0.5 }}
-          className=" flex flex-col items-center pt-5 lg:pt-0 h-20 space-y-1"
+          className="flex flex-col items-center pt-5 lg:pt-0 h-20 space-y-1"
         >
-          <h2 className="text-6xl font-bold">5k+</h2>
-          <p className="opacity-70">Hours spent on craft</p>
+          <h2 className="text-6xl font-bold">20k+</h2>
+          <p className="opacity-70">AI-generated learning hours</p>
         </motion.div>
-        <Separator className=" w-3/ lg:w-1/12 lg:rotate-90 mt-14 lg:mt-10" />
+        <Separator className="w-3/ lg:w-1/12 lg:rotate-90 mt-14 lg:mt-10" />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{
@@ -164,10 +164,10 @@ export const FifthSection = () => {
             transition: { delay: 0.8, duration: 0.7, ease: "easeOut" },
           }}
           viewport={{ once: true, amount: 0.5 }}
-          className=" flex flex-col pt-5 lg:pt-0 items-center h-20 space-y-1"
+          className="flex flex-col pt-5 lg:pt-0 items-center h-20 space-y-1"
         >
-          <h2 className="text-6xl font-bold">4.8</h2>
-          <p className="opacity-70">Review rate</p>
+          <h2 className="text-6xl font-bold">4.9</h2>
+          <p className="opacity-70">AI-driven feedback ratings</p>
         </motion.div>
       </div>
     </section>
