@@ -10,7 +10,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { GraduationCap, Menu, SquareArrowOutUpRight, X } from "lucide-react";
-import { ThemeButton } from "../ThemeButton";
+import { ThemeButton } from "./ThemeButton";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
