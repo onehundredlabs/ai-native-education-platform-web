@@ -63,7 +63,7 @@ export const SecondSection = () => {
         </p>
       </motion.div>
 
-      <div className="w-5/6 lg:w-3/4 2xl:w-1/2 m-auto grid grid-cols-1 lg:grid-cols-3 gap-y-14 gap-x-14 mt-10 font-geist">
+      <div className="w-5/6 lg:w-3/4 2xl:w-1/2 m-auto grid grid-cols-1 lg:grid-cols-3 gap-y-10 gap-x-8 mt-10 font-geist">
         {data.map((item, i) => (
           <motion.div
             key={i}
@@ -72,7 +72,7 @@ export const SecondSection = () => {
             whileInView="visible"
             variants={cardVariants}
             viewport={{ once: true, amount: 0.5 }}
-            className={`border rounded-xl shadow-lg p-10 flex flex-col items-center bg-card 
+            className={`border rounded-xl shadow-lg dark:border-border/35 p-10 flex flex-col items-center bg-card 
             }`}
           >
             {item.icon}

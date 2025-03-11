@@ -78,12 +78,15 @@ export const ThirdSection = () => {
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <Card className="w-full mt-10">
+        <Card className="relative w-full h-full mt-10 shadow-lg dark:border-border/35">
+          <div className="absolute scale-0 dark:scale-100 inset-0 flex justify-center items-center">
+            <p className="text-3xl">Obrazek z textoveho editoru aplikace</p>
+          </div>
           <Image
             src={"/placeholder-screen.png"}
             width={1920}
             height={500}
-            className="rounded-xl"
+            className="rounded-xl dark:scale-0"
             alt="screenshot of application"
           />
         </Card>
@@ -115,7 +118,7 @@ export const ThirdSection = () => {
                 <MoveRight
                   size={100}
                   strokeWidth={0.5}
-                  className={`mx-2 hidden lg:flex `}
+                  className={`mx-2 hidden lg:flex dark:opacity-70`}
                 />
               )}
             </div>

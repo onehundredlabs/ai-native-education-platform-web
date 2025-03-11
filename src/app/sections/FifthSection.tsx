@@ -62,7 +62,7 @@ export const FifthSection = () => {
             viewport={{ once: true, amount: 0.5 }}
             className="lg:w-2/3"
           >
-            <Card className="w-full h-[400px] flex items-center justify-center">
+            <Card className="w-full h-[400px] flex items-center justify-center shadow-lg dark:border-border/35">
               <p>video chatu s ai/ ai demo</p>
             </Card>
           </motion.div>
@@ -104,7 +104,7 @@ export const FifthSection = () => {
             viewport={{ once: true, amount: 0.5 }}
             className="lg:w-2/3"
           >
-            <Card className="w-full h-[400px] flex items-center justify-center">
+            <Card className="w-full h-[400px] flex items-center justify-center shadow-lg dark:border-border/35">
               <p>video chatu s clovekem</p>
             </Card>
           </motion.div>
@@ -127,7 +127,7 @@ export const FifthSection = () => {
           </motion.div>
         </motion.div>
       )}
-      <div className="w-full flex flex-col lg:flex-row justify-center mt-20 space-x-2 font-geist">
+      <div className="w-full flex flex-col lg:flex-row justify-center mt-20 lg:space-x-2 font-geist">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{
@@ -141,7 +141,18 @@ export const FifthSection = () => {
           <h2 className="text-6xl font-bold">1M+</h2>
           <p className="opacity-70">AI-powered learning sessions</p>
         </motion.div>
-        <Separator className="lg:w-1/12 lg:rotate-90 mt-28 lg:mt-10" />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { delay: 0.3, duration: 0.7, ease: "easeOut" },
+          }}
+          viewport={{ once: true, amount: 0.5 }}
+          className="flex justify-center items-center w-full lg:w-32"
+        >
+          <Separator className="dark:opacity-35 lg:w-full w-3/4 lg:rotate-90 mt-28 lg:mt-0 " />
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{
@@ -155,7 +166,19 @@ export const FifthSection = () => {
           <h2 className="text-6xl font-bold">20k+</h2>
           <p className="opacity-70">AI-generated learning hours</p>
         </motion.div>
-        <Separator className="w-3/ lg:w-1/12 lg:rotate-90 mt-14 lg:mt-10" />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { delay: 0.6, duration: 0.7, ease: "easeOut" },
+          }}
+          viewport={{ once: true, amount: 0.5 }}
+          className="flex justify-center items-center lg:w-32"
+        >
+          <Separator className="dark:opacity-35 w-3/4 lg:w-full lg:rotate-90 mt-14 lg:mt-0 " />
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{

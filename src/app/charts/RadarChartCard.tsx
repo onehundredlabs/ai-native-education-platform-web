@@ -34,7 +34,7 @@ const chartConfig = {
 
 export function RadarChartCard() {
   return (
-    <Card className="lg:h-[620px] 2xl:h-[700px]">
+    <Card className="lg:h-[620px] 2xl:h-[700px] shadow-lg dark:border-border/35">
       <CardHeader className=" pb-6">
         <CardTitle className="text-left pt-3 b-1">
           Digital Certificates
@@ -75,7 +75,7 @@ export function RadarChartCard() {
         <div className="flex items-center gap-2 leading-none text-muted-foreground">
           January - June 2024
         </div>
-        
+
         <Separator className="my-5" />
         <div className="text-sm">
           <ul className="space-y-3  pb-5">

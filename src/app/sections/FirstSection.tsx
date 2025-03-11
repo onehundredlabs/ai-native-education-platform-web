@@ -55,7 +55,7 @@ const data = [
 
 export const FirstSection = () => {
   return (
-    <section className="mb-32 lg:mb-48 w-5/6 lg:w-3/4 2xl:w-1/2 rounded-xl m-auto ">
+    <section className="mb-32 lg:mb-48 w-5/6  lg:w-3/4 2xl:w-1/2 rounded-xl m-auto ">
       <div id="creation" className="flex font-geist mt-24 scroll-mt-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -82,7 +82,7 @@ export const FirstSection = () => {
             variants={cardVariants}
             viewport={{ once: true, amount: 0.5 }}
           >
-            <Card className="border-border shadow-lg pb-3">
+            <Card className="border-border dark:border-border/35 shadow-lg pb-3">
               <CardHeader>
                 {item.icon}
                 <CardTitle className="lg:text-xl xl:text-2xl">

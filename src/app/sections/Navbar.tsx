@@ -39,7 +39,7 @@ export const Navbar = () => {
   return (
     <section>
       <motion.header
-        className={`w-full border-b bg-white 
+        className={`w-full border-b dark:border-border/35 bg-card
           
          m-auto  lg:hidden fixed z-10 left-1/2 transform -translate-x-1/2`}
         initial={{ height: "80px" }}
@@ -49,18 +49,21 @@ export const Navbar = () => {
           <h1>
             <GraduationCap className="text-primary text-center" size={40} />
           </h1>
-          <motion.button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="flex lg:hidden"
-            animate={{ rotate: isMenuOpen ? 180 : 0 }} // Animace otočení
-            transition={{ duration: 0.3, ease: "easeInOut" }} // Plynulost animace
-          >
-            {isMenuOpen ? (
-              <X size={40} strokeWidth={1} />
-            ) : (
-              <Menu size={40} strokeWidth={1} />
-            )}
-          </motion.button>
+          <div className="flex space-x-2">
+            <ThemeButton />
+            <motion.button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="flex lg:hidden"
+              animate={{ rotate: isMenuOpen ? 180 : 0 }} // Animace otočení
+              transition={{ duration: 0.3, ease: "easeInOut" }} // Plynulost animace
+            >
+              {isMenuOpen ? (
+                <X size={40} strokeWidth={1} />
+              ) : (
+                <Menu size={40} strokeWidth={1} />
+              )}
+            </motion.button>
+          </div>
         </div>
         {isMenuOpen && (
           <motion.div
@@ -70,22 +73,22 @@ export const Navbar = () => {
           >
             <nav className="flex flex-col mt-3">
               <Button variant="link" asChild>
-                <a href="">Creation</a>
+                <a href="#creation">Creation</a>
               </Button>
               <Button variant="link" asChild>
-                <a href="">Managment</a>
+                <a href="#managment">Managment</a>
               </Button>
               <Button variant="link" asChild>
-                <a href="">Feedback</a>
+                <a href="#feedback">Feedback</a>
               </Button>
               <Button variant="link" asChild>
-                <a href="">Analytics</a>
+                <a href="#analytics">Analytics</a>
               </Button>
               <Button variant="link" asChild>
-                <a href="">Collaboration</a>
+                <a href="#collaboration">Collaboration</a>
               </Button>
               <Button variant="link" className="pr-4 lg:pr-0" asChild>
-                <a href="">Explore</a>
+                <a href="#explore">Explore</a>
               </Button>
             </nav>
           </motion.div>

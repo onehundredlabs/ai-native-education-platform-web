@@ -46,7 +46,7 @@ export const Footer = () => {
         </a>
       </div>
 
-      <Separator className="my-8" />
+      <Separator className="my-8 dark:opacity-35" />
       <div className="flex justify-between items-center mb-10">
         <p className="text-center text-sm text-muted-foreground">
           © 2025 Learnify.
