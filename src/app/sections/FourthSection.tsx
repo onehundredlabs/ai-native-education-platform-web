@@ -14,7 +14,7 @@ export const FourthSection = () => {
   return (
     <section className="w-5/6 lg:w-3/4 2xl:w-1/2 m-auto mb-32 lg:mb-48">
       <motion.div
-      id="analytics"
+        id="analytics"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}

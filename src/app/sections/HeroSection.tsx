@@ -17,7 +17,8 @@ export const HeroSection = () => {
             transition={{ duration: 0.4 }}
           >
             <Badge className="mb-6 2xl:mb-12 font-geist  2xl:text-base 2xl:py-1.5">
-              <Sparkle size={12} className="mr-1 2xl:size-5 " /> New version available
+              <Sparkle size={12} className="mr-1 2xl:size-5 " /> New version
+              available
             </Badge>
           </motion.div>
           <motion.h2
@@ -74,7 +75,7 @@ export const HeroSection = () => {
           />
         </motion.div>
       </div>
-      <div ></div>
+      <div></div>
     </section>
   );
 };

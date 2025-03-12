@@ -1,17 +1,17 @@
-"use client"
-import { Moon, Sun } from "lucide-react"
-import { useTheme } from "next-themes"
+"use client";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
 
-export const ThemeButton = () =>  {
-  const { setTheme } = useTheme()
+export const ThemeButton = () => {
+  const { setTheme } = useTheme();
 
   return (
     <DropdownMenu>
@@ -22,17 +22,26 @@ export const ThemeButton = () =>  {
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" >
-        <DropdownMenuItem className="hover:bg-secondary" onClick={() => setTheme("light")}>
+      <DropdownMenuContent align="end">
+        <DropdownMenuItem
+          className="hover:bg-secondary"
+          onClick={() => setTheme("light")}
+        >
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem  className="hover:bg-primary" onClick={() => setTheme("dark")}>
+        <DropdownMenuItem
+          className="hover:bg-primary"
+          onClick={() => setTheme("dark")}
+        >
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem className="hover:bg-secondary" onClick={() => setTheme("system")}>
+        <DropdownMenuItem
+          className="hover:bg-secondary"
+          onClick={() => setTheme("system")}
+        >
           System
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
-}
+  );
+};
