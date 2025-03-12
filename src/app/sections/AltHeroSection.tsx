@@ -23,7 +23,7 @@ export const AltHeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.3 }}
-          className="text-[44px]  lg:text-[65px] leading-none 2xl:text-6xl font-geist  text-center  font-bold text-card-foreground "
+          className="text-[44px]  lg:text-[65px] leading-none 2xl:text-7xl font-geist  text-center  font-bold text-card-foreground "
         >
           Transform <span className="text-nowrap lg:text-wrap">Education <br className="hidden lg:block" /> with</span>{" "}
           <span className="text-primary">AI-Powered</span>

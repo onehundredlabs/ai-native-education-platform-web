@@ -39,7 +39,7 @@ const chartConfig = {
 
 export function AreaChartCard() {
   return (
-    <Card className="lg:h-[620px] 2xl:h-[700px] shadow-lg dark:border-border/35">
+    <Card className="lg:h-[620px] 2xl:h-[700px] shadow-lg ">
       <CardHeader className="pb-10">
         <CardTitle className="pt-3 pb-1">Learner Dashboards</CardTitle>
         <CardDescription>

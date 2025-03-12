@@ -35,11 +35,11 @@ const chartConfig = {
 
 export function BarChartCard() {
   return (
-    <Card className="lg:h-[620px] 2xl:h-[700px] shadow-lg dark:border-border/35">
+    <Card className="lg:h-[620px] 2xl:h-[700px] shadow-lg">
       <CardHeader className="pb-10">
         <CardTitle className="pt-3 b-1">Educator Dashboards</CardTitle>
         <CardDescription>
-          Monitor student engagement trends to optimize lesson plans and boost
+          Monitor student engagement to optimize lesson plans and boost
           participation.
         </CardDescription>
       </CardHeader>

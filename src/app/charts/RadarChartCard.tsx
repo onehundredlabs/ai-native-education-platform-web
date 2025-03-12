@@ -34,15 +34,13 @@ const chartConfig = {
 
 export function RadarChartCard() {
   return (
-    <Card className="lg:h-[620px] 2xl:h-[700px] shadow-lg dark:border-border/35">
+    <Card className="lg:h-[620px] 2xl:h-[700px] shadow-lg">
       <CardHeader className=" pb-6">
         <CardTitle className="text-left pt-3 b-1">
           Digital Certificates
         </CardTitle>
         <CardDescription>
-          Reward milestones or course completion with shareable certificates to
-          mark achievements.
-        </CardDescription>
+        Reward milestones or completion with certificates to celebrate achievements.        </CardDescription>
       </CardHeader>
       <CardContent className="">
         <ChartContainer
